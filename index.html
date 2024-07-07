@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Hidden IPTV Code</title>
+</head>
+<body>
+    <h1>Welcome to My IPTV Website</h1>
+    <p>This is a sample website with hidden IPTV code.</p>
+
+    <!-- Hidden IPTV code for IPTV application -->
+    <div style="display:none;">
+        <pre id="iptv-code">
+#EXTM3U
+#EXTINF:-1, Channel 1
+http://example.com/stream1
+#EXTINF:-1, Channel 2
+http://example.com/stream2
+#EXTINF:-1, Channel 3
+http://example.com/stream3
+        </pre>
+    </div>
+
+    <script>
+        // Script to log IPTV code to the console
+        const iptvCode = document.getElementById('iptv-code').innerText;
+        console.log(iptvCode);
+        // You can add additional logic here to handle the IPTV code as needed
+    </script>
+</body>
+</html>
