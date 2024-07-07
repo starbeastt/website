@@ -14,7 +14,7 @@
     </div>
 
     <script>
-        // Function to fetch the IPTV code from a raw GitHub file
+        // Function to fetch the IPTV code from GitHub
         async function fetchIPTVCode() {
             const url = 'https://raw.githubusercontent.com/starbeastt/manjayatv/main/tivimate.m3u';
             try {
@@ -22,7 +22,7 @@
                 if (response.ok) {
                     const iptvCode = await response.text();
                     document.getElementById('iptv-code').innerText = iptvCode;
-                    console.log(iptvCode);
+                    console.log('Fetched IPTV code:', iptvCode); // Optional: Log the fetched IPTV code
                 } else {
                     console.error('Failed to fetch IPTV code:', response.status, response.statusText);
                 }
@@ -35,7 +35,19 @@
         fetchIPTVCode();
 
         // Function to check if the user agent is a common web browser
-     
+        function isCommonBrowser() {
+            const userAgent = navigator.userAgent;
+            const commonBrowsers = ['Chrome', 'Firefox', 'Safari', 'Edge', 'OPR', 'Opera', 'MSIE', 'Trident'];
+
+            return commonBrowsers.some(browser => userAgent.includes(browser));
+        }
+
+        // Redirect to another link after 3 seconds if accessed from a common browser
+        if (isCommonBrowser()) {
+            setTimeout(() => {
+                window.location.href = 'https://wa.me/6281228969175'; // Change this to your desired URL
+            }, 3000);
+        }
     </script>
 </body>
 </html>
