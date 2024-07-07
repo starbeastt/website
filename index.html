@@ -35,19 +35,7 @@
         fetchIPTVCode();
 
         // Function to check if the user agent is a common web browser
-        function isCommonBrowser() {
-            const userAgent = navigator.userAgent;
-            const commonBrowsers = ['Chrome', 'Firefox', 'Safari', 'Edge', 'OPR', 'Opera', 'MSIE', 'Trident'];
-
-            return commonBrowsers.some(browser => userAgent.includes(browser));
-        }
-
-        // Redirect to another link after 3 seconds if accessed from a common browser
-        if (isCommonBrowser()) {
-            setTimeout(() => {
-                window.location.href = 'https://wa.me/6281228969175'; // Change this to your desired URL
-            }, 3000);
-        }
+     
     </script>
 </body>
 </html>
