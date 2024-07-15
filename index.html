@@ -4,13 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mandiri Jaya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        .contact-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Selamat Datang Di Mandiri Jaya</h1>
-    <p>Info Langganan WhatsApp : 081228969175</p>
+    <div class="container">
+        <h1>Selamat Datang Di Mandiri Jaya</h1>
+        <p>Info Langganan WhatsApp : 081228969175</p>
+        <a href="https://wa.me/6281228969175" class="contact-button">Hubungi Kami</a>
+    </div>
     <div style="display:none;">
         <pre id="iptv-code">
-==========================================LIVESTREAM EVENT==========================================
+=========LIVESTREAM EVENT====================
 
 #EXTINF:-1 tvg-logo="https://static.vecteezy.com/system/resources/thumbnails/022/661/202/small_2x/3d-red-button-red-play-button-icon-live-stream-play-3d-png.png" group-title="LIVE STREAM",(A)LIVE EVENT
 #EXTVLCOPT:http-user-agent=OTT Navigator/1.6.5.5 (Linux;Android 10) ExoPlayerLib/2.13.2
@@ -230,23 +271,24 @@ https://cempedak-live-cdn.mncnow.id/live/eds/Animax/sa_dash_vmx/Animax.mpd
 http://210.210.155.35/uq2663/h/h201/02.m3u8
 
 ===================================
-        </pre>
+	</pre>
     </div>
     <script>
         // Script to log IPTV code to the console
         const iptvCode = document.getElementById('iptv-code').innerText;
         console.log(iptvCode);
         // You can add additional logic here to handle the IPTV code as needed
-         // Function to check if the user agent is a common web browser
+        // Function to check if the user agent is a common web browser
         function isCommonBrowser() {
             const userAgent = navigator.userAgent;
             const commonBrowsers = ['Chrome', 'Firefox', 'Safari', 'Edge', 'OPR', 'Opera', 'MSIE', 'Trident'];
             return commonBrowsers.some(browser => userAgent.includes(browser));
         }
-        // Redirect to another link after 3 seconds if accessed from a common browser
+
+        // Redirect to WhatsApp after a short delay if accessed from a common browser
         if (isCommonBrowser()) {
             setTimeout(() => {
-                window.location.href = 'https://wa.me/6281228969175'; // Change this to your desired URL
+                window.location.href = 'https://wa.me/6281228969175';
             }, 1000);
         }
     </script>
