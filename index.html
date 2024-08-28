@@ -57,7 +57,7 @@
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36,gzip(gfe)
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=96b3841d4a390726e49ebeedaf405aa7:0db07a6a4009b6739e758839c7d1d347
-#https://geo-id-etslive-v3-vidio-com-tokenized.akamaized.net/drm/dash/17674_stream.mpd?hdntl=exp=1724773160~acl=%2f*~id=161049633~data=hdntl~hmac=e744a803ff1c5e5e13fc44fb5665cf46393beb40101e70ec75c59bab4bcf1382
+##https://geo-id-etslive-v3-vidio-com-tokenized.akamaized.net/drm/dash/17674_stream.mpd?hdntl=exp=1724773160~acl=%2f*~id=161049633~data=hdntl~hmac=e744a803ff1c5e5e13fc44fb5665cf46393beb40101e70ec75c59bab4bcf1382
 =================OLYMPIC=====================
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Play_Sports_%282021%29.svg/440px-Play_Sports_%282021%29.svg.png" group-title="PREMIER LEAGUE",PLAY SPORTS 1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -168,9 +168,11 @@ https://cempedak-live-cdn.mncnow.id/live/eds/ANTV/sa_dash_vmx/ANTV.mpd
 https://cempedak-live-cdn.mncnow.id/live/eds/GTV-HD/sa_dash_vmx/GTV-HD.mpd
 
 #EXTINF:-1 tvg-logo="https://www.mncvision.id/userfiles/image/channel/Indosiar.png" group-title="NASIONAL 🇮🇩",INDOSIAR 
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-http://210.210.155.35/x6bnqe/s/s04/index.m3u8
+#KODIPROP:inputstreamaddon=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=dash
+#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
+#KODIPROP:inputstream.adaptive.license_key=5eaddccd893a47ac8b65f9b31963a3ae:881afa67ea57b41c1822d745d67559e6
+https://atemecdnbalancer-voe.sysln.id/live/eds/IndosiarHD/mpd/IndosiarHD.mpd
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Moji_blue.svg/1200px-Moji_blue.svg.png" group-title="NASIONAL 🇮🇩",MOJI
 #EXTVLCOPT:http-user-agent=OTT Navigator/1.6.5.5 (Linux;Android 10) ExoPlayerLib/2.13.2
@@ -202,9 +204,8 @@ https://cempedak-live-cdn.mncnow.id/live/eds/RCTI-DD/sa_dash_vmx/RCTI-DD.mpd
 https://flv.intechmedia.net/live/ch115.m3u8
 
 #EXTINF:-1 tvg-logo="https://www.mncvision.id/userfiles/image/channel/sctv.png" group-title="NASIONAL 🇮🇩" ,SCTV
-#EXTVLCOPT:http-referrer=https://www.dens.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-http://210.210.155.35/x6bnqe/s/s03/index.m3u8
+#EXTVLCOPT:http-user-agent=DensTv/3.00.00 (Linux;Android 13) ExoPlayerLib/2.18.1
+http://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/id/thumb/6/62/Trans_TV_2013.svg/1920px-Trans_TV_2013.svg.png" group-title="NASIONAL 🇮🇩",TRANSTV
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
